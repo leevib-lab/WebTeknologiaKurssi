@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .checkbox-label {
+            margin-right: 20px;
+        }
+
+        legend {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightgray;
+        }
+
+        fieldset {
+            width: 450px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 20px;
+            flex-wrap: nowrap;
+            background-color: white;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            width: 80px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .form-group input {
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="/koodi.php">
+        <fieldset>
+            <legend>Contact information</legend>
+            <div class="form-group">
+                <label for="fname">Firstname:</label>
+                <input type="text" id="fname" name="fname">
+                <legend>Preferred contact method:</legend>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Lastname:</label>
+                <input type="text" id="lname" name="lname">
+                <input type="checkbox" id="c_email" name="c_email" value="email" class="checkbox-label">
+                <label for="c_email">Email</label> <br>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <input type="checkbox" id="c_telephone" name="c_telephone" value="telephone" class="checkbox-label">
+                <label for="c_telephone">Telephone</label> <br>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Telephone:</label>
+                <input type="text" id="telephone" name="telephone">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Feedback:</legend>
+            <label for="message">Message subject:</label>
+            <input type="text" id="message" name="message"><br>
+            <textarea name="message" rows="15" cols="60"></textarea>
+            <p>
+                Attach a file:&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="file" id="file" name="file">
+            </p>
+            <label for="send"></label>
+            <input type="button" id="send" name="send" value="Send">
+        </fieldset>
+    </form>
+</body>
+
+</html>

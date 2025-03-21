@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä</title>
+</head>
+
+<body>
+    <form action="/koodi.php">
+        <fieldset>
+            <legend>Contact information</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname">Firstname:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fname">
+                    </td>
+                    <td>
+                        <label>Preferred contact method:</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="lname">Lastname:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lname">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="c_email" name="c_email" value="email" class="checkbox-label">
+                        <label for="c_email">Email</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="c_telephone" name="c_telephone" value="telephone"
+                            class="checkbox-label">
+                        <label for="c_telephone">Telephone</label> <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="telephone">Telephone:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="telephone" name="telephone">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <style>
+            .checkbox-label {
+                margin-right: 20px;
+            }
+        </style>
+
+        <fieldset>
+            <legend>Feedback:</legend>
+            <label for="message">Message subject:</label>
+            <input type="text" id="message" name="message"><br>
+            <textarea name="message" rows="15" cols="50"></textarea>
+            <table>
+                <tr>
+                    <td>
+                        <p>Attach a file:&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                    <td>
+                        <input type="file" id="file" name="file">
+                    </td>
+                </tr>
+            </table>
+            <label for="send"></label>
+            <input type="button" id="send" name="send" value="Send">
+        </fieldset>
+    </form>
+</body>
+
+</html>

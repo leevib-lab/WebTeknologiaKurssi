@@ -1,0 +1,41 @@
+.checkbox-label {
+    margin-right: 20px;
+}
+
+legend {
+    font-family: "Times New Roman", Times, serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    width: 450px;
+    margin: 6px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    width: 80px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.form-group input {
+    margin-right: 10px;
+}
